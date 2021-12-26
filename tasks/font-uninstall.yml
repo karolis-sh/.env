@@ -1,0 +1,12 @@
+- name: zsh setup
+  tags: font
+  block:
+    - name: Uninstall FiraCode font
+      community.general.homebrew_cask:
+        name: font-fira-code
+        state: absent
+
+    - name: Un-tap the cask fonts repository
+      community.general.homebrew_tap:
+        name: homebrew/cask-fonts
+        state: absent

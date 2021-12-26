@@ -1,0 +1,15 @@
+- name: zsh setup
+  tags: zsh
+  block:
+    - name: Change shell to zsh
+      shell: chsh -s $(which zsh)
+
+    - name: Check if the oh-my-zsh exists
+      stat:
+        path: $HOME/.oh-my-zsh
+      register: oh_my_stat
+
+    - name: Install Oh-My-Zsh
+      shell: curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh > ~/.oh-my-installer && chmod +x ~/.oh-my-installer && ~/.oh-my-installer
+      become_user: "{{ lookup('env', 'USER') }}"
+      when: oh_my_stat.stat.exists == False

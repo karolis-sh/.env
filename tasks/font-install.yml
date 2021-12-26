@@ -1,0 +1,11 @@
+- name: zsh setup
+  tags: font
+  block:
+    - name: Tap the cask fonts repository
+      community.general.homebrew_tap:
+        name: homebrew/cask-fonts
+
+    - name: Install FiraCode font
+      community.general.homebrew_cask:
+        name: font-fira-code
+        state: latest

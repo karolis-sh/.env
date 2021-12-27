@@ -1,0 +1,17 @@
+- name: apps
+  tags: apps
+  block:
+    - name: Uninstall Notion
+      community.general.homebrew_cask:
+        name: notion
+        state: absent
+
+    - name: Uninstall Raycast
+      community.general.homebrew_cask:
+        name: raycast
+        state: absent
+
+    - name: Uninstall Messenger
+      community.general.homebrew_cask:
+        name: messenger
+        state: absent

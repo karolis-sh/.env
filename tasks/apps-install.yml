@@ -1,0 +1,14 @@
+- name: apps
+  tags: apps
+  block:
+    - name: Install Notion
+      community.general.homebrew_cask:
+        name: notion
+
+    - name: Install Raycast
+      community.general.homebrew_cask:
+        name: raycast
+
+    - name: Install Messenger
+      community.general.homebrew_cask:
+        name: messenger

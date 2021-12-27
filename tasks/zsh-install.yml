@@ -1,4 +1,4 @@
-- name: zsh setup
+- name: zsh
   tags: zsh
   block:
     - name: Change shell to zsh

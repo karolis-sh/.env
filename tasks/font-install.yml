@@ -1,4 +1,4 @@
-- name: zsh setup
+- name: font
   tags: font
   block:
     - name: Tap the cask fonts repository

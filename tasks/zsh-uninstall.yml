@@ -1,4 +1,4 @@
-- name: zsh setup
+- name: zsh
   tags: zsh
   block:
     - name: Check that the oh-my-zsh exists

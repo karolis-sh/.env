@@ -1,9 +1,14 @@
 - name: apps
   tags: apps
   block:
-    - name: Uninstall Notion
+    - name: Install Chrome
       community.general.homebrew_cask:
-        name: notion
+        name: google-chrome
+        state: absent
+
+    - name: Install NordPass
+      community.general.homebrew_cask:
+        name: nordpass
         state: absent
 
     - name: Uninstall Raycast
@@ -11,7 +16,17 @@
         name: raycast
         state: absent
 
+    - name: Uninstall Notion
+      community.general.homebrew_cask:
+        name: notion
+        state: absent
+
     - name: Uninstall Messenger
       community.general.homebrew_cask:
         name: messenger
+        state: absent
+
+    - name: Uninstall VSCode
+      community.general.homebrew_cask:
+        name: visual-studio-code
         state: absent

@@ -1,14 +1,26 @@
 - name: apps
   tags: apps
   block:
-    - name: Install Notion
+    - name: Install Chrome
       community.general.homebrew_cask:
-        name: notion
+        name: google-chrome
+
+    - name: Install NordPass
+      community.general.homebrew_cask:
+        name: nordpass
 
     - name: Install Raycast
       community.general.homebrew_cask:
         name: raycast
 
+    - name: Install Notion
+      community.general.homebrew_cask:
+        name: notion
+
     - name: Install Messenger
       community.general.homebrew_cask:
         name: messenger
+
+    - name: Install VSCode
+      community.general.homebrew_cask:
+        name: visual-studio-code

@@ -1,0 +1,7 @@
+- name: node
+  tags: node
+  block:
+    - name: Uninstall Volta
+      ansible.builtin.file:
+        path: ~/.volta
+        state: absent

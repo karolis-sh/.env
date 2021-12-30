@@ -1,0 +1,10 @@
+- name: terminal
+  tags: terminal
+  block:
+    - name: Uninstall tldr npm package
+      shell: yarn global remove tldr
+
+    - name: Uninstall iTerm2
+      community.general.homebrew_cask:
+        name: iterm2
+        state: absent

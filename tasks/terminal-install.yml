@@ -1,0 +1,9 @@
+- name: terminal
+  tags: terminal
+  block:
+    - name: Install tldr npm package
+      shell: yarn global add tldr
+
+    - name: Install iTerm2
+      community.general.homebrew_cask:
+        name: iterm2

@@ -2,7 +2,7 @@
   tags: terminal
   block:
     - name: Install tldr npm package
-      shell: yarn global add tldr
+      shell: yarn global add tldr && tldr curl
 
     - name: Install iTerm2
       community.general.homebrew_cask:

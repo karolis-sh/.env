@@ -5,4 +5,4 @@
       shell: curl https://get.volta.sh | bash
 
     - name: Install latest LTS Node
-      shell: volta install node && volta install yarn
+      shell: source ~/.profile && volta install node && volta install yarn

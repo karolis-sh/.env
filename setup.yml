@@ -1,0 +1,11 @@
+- hosts: localhost
+  connection: local
+  vars:
+    ansible_python_interpreter: $(which python3)
+  tasks:
+    - import_tasks: tasks/zsh.yml
+    - import_tasks: tasks/node.yml
+    - import_tasks: tasks/dotfiles.yml
+    - import_tasks: tasks/terminal.yml
+    - import_tasks: tasks/font.yml
+    - import_tasks: tasks/apps.yml

@@ -4,5 +4,5 @@
 brew update
 brew install ansible
 
-chmod u+x install.sh
-chmod u+x uninstall.sh
+chmod u+x setup.sh
+chmod u+x clean.sh

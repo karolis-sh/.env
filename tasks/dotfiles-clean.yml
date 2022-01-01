@@ -1,0 +1,13 @@
+- name: dotfiles
+  tags: dotfiles
+  block:
+    - name: Unstow dotfiles
+      shell: cd $HOME/.dotfiles && ./clean.sh
+
+    - name: Remove dotfiles repository
+      shell: rm -rf $HOME/.dotfiles
+
+    - name: Uninstall Stow
+      community.general.homebrew:
+        name: stow
+        state: absent

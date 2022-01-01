@@ -1,0 +1,11 @@
+- hosts: localhost
+  connection: local
+  vars:
+    ansible_python_interpreter: $(which python3)
+  tasks:
+    - import_tasks: tasks/apps-clean.yml
+    - import_tasks: tasks/font-clean.yml
+    - import_tasks: tasks/terminal-clean.yml
+    - import_tasks: tasks/dotfiles-clean.yml
+    - import_tasks: tasks/node-clean.yml
+    - import_tasks: tasks/zsh-clean.yml

@@ -4,6 +4,14 @@
     - name: Uninstall tldr npm package
       shell: yarn global remove tldr
 
+    - name: Uninstall commitizen npm package
+      shell: yarn global remove commitizen
+
+    - name: Uninstall tree
+      community.general.homebrew:
+        name: tree
+        state: absent
+
     - name: Uninstall iTerm2
       community.general.homebrew_cask:
         name: iterm2

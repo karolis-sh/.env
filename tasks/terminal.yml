@@ -4,6 +4,13 @@
     - name: Install tldr npm package
       shell: yarn global add tldr && tldr curl
 
+    - name: Install commitizen npm package
+      shell: yarn global add commitizen
+
+    - name: Install tree
+      community.general.homebrew:
+        name: tree
+
     - name: Install iTerm2
       community.general.homebrew_cask:
         name: iterm2

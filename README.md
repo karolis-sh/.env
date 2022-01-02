@@ -9,6 +9,7 @@
 
 - Setup iTerm2:
   - Import Quake profile
+  - Import key bindings
   - Import Dracula theme
 - Import Raycast export
 

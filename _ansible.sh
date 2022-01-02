@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-ansible-playbook --inventory localhost, "$@"
+ansible-playbook --inventory localhost, "$@" --ask-become-pass --ask-vault-pass

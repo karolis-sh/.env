@@ -6,3 +6,4 @@ brew install ansible
 
 chmod u+x setup.sh
 chmod u+x clean.sh
+chmod u+x restow.sh

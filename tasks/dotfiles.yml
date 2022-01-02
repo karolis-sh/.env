@@ -6,4 +6,4 @@
         name: stow
 
     - name: Stow dotfiles
-      shell: stow --restow --target=$HOME dotfiles
+      shell: ./restow.sh

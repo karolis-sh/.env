@@ -11,3 +11,14 @@
   - Import Quake profile
   - Import Dracula theme
 - Import Raycast export
+
+## References
+
+- <https://github.com/ThePrimeagen/dev-productivity>
+  - <https://github.com/ThePrimeagen/ansible>
+  - <https://github.com/ThePrimeagen/.dotfiles>
+  - <https://github.com/junegunn/fzf>
+  - <https://cht.sh/>
+  - <https://github.com/koekeishiya/yabai>
+  - <https://github.com/alacritty/alacritty> vs <https://sw.kovidgoyal.net/kitty/>
+- <https://github.com/leonidas/ansible-nvm>

@@ -16,3 +16,6 @@
       community.general.homebrew_cask:
         name: iterm2
         state: absent
+
+    - name: Remove dracula theme repository
+      shell: rm -rf $HOME/.dracula-iterm2

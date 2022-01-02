@@ -14,3 +14,9 @@
     - name: Install iTerm2
       community.general.homebrew_cask:
         name: iterm2
+
+    - name: Clone dracula theme
+      ansible.builtin.git:
+        repo: "https://github.com/dracula/iterm.git"
+        dest: "{{ lookup('env', 'HOME') }}/.dracula-iterm2"
+        update: yes

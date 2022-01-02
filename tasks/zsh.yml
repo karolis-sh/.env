@@ -13,3 +13,8 @@
       shell: curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh > /var/tmp/oh-my-installer && chmod +x /var/tmp/oh-my-installer && /var/tmp/oh-my-installer
       become_user: "{{ lookup('env', 'USER') }}"
       when: oh_my_stat.stat.exists == False
+
+    - name: Install zsh-autosuggestions
+      ansible.builtin.git:
+        repo: "https://github.com/zsh-users/zsh-autosuggestions.git"
+        dest: "~/.oh-my-zsh/custom/plugins/zsh-autosuggestions"

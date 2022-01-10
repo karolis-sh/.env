@@ -1,0 +1,3 @@
+exe() {
+    chmod u+x $1
+}

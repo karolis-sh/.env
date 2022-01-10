@@ -11,6 +11,10 @@
       community.general.homebrew:
         name: tree
 
+    - name: Install bat
+      community.general.homebrew:
+        name: bat
+
     - name: Install iTerm2
       community.general.homebrew_cask:
         name: iterm2

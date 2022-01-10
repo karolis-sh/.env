@@ -12,6 +12,11 @@
         name: tree
         state: absent
 
+    - name: Uninstall bat
+      community.general.homebrew:
+        name: bat
+        state: absent
+
     - name: Uninstall iTerm2
       community.general.homebrew_cask:
         name: iterm2

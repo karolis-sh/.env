@@ -1,3 +1,7 @@
 exe() {
-    chmod u+x $1
+  chmod u+x $1
+}
+
+initec() {
+  cp ~/.editorconfig .editorconfig
 }

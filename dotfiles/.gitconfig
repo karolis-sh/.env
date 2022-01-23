@@ -1,6 +1,6 @@
 [user]
   name = Karolis Šarapnickis
-  email = pastas.k@gmail.com
+  email = hi@karolis.sh
 [core]
   editor = code
   excludesfile = ~/.gitignore

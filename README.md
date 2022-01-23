@@ -15,6 +15,7 @@
 
 ## References
 
+- `git submodule update --remote`
 - <https://github.com/ThePrimeagen/dev-productivity>
   - <https://github.com/ThePrimeagen/ansible>
   - <https://github.com/ThePrimeagen/.dotfiles>

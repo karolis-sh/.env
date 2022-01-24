@@ -24,3 +24,7 @@
         repo: "https://github.com/dracula/iterm.git"
         dest: "{{ lookup('env', 'HOME') }}/.dracula-iterm2"
         update: yes
+
+    - name: Install awscli package
+      pip:
+        name: awscli

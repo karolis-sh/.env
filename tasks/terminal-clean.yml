@@ -24,3 +24,8 @@
 
     - name: Remove dracula theme repository
       shell: rm -rf $HOME/.dracula-iterm2
+
+    - name: Install awscli package
+      pip:
+        name: awscli
+        state: absent

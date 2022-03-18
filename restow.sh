@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-stow --restow --target=$HOME dotfiles --verbose
+stow --restow --target=$HOME dotfiles --verbose "$@"

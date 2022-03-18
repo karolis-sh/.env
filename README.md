@@ -1,9 +1,11 @@
 # `.env`
 
 1. `xcode-select --install`
-2. `git clone --recurse-submodules https://github.com/karolis-sh/.env.git && cd .env && sh init.sh`
+2. `git clone --recurse-submodules https://github.com/karolis-sh/.env.git && cd .env && ./init.sh`
 3. `./setup.sh` (`-t zsh,terminal` for targeting specific tags)
-4. `./restow.sh` for quick dotfiles re-stowing
+4. `./restow.sh` for dotfiles stowing **\***
+
+**\*** Might need to delete some dotfiles as stowing will abort having conflicts
 
 ## Manual Steps
 

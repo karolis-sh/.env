@@ -4,6 +4,3 @@
     - name: Install Stow
       community.general.homebrew:
         name: stow
-
-    - name: Stow dotfiles
-      shell: ./restow.sh

@@ -1,12 +1,7 @@
 - name: apps
   tags: apps
   block:
-    - name: Install Chrome
-      community.general.homebrew_cask:
-        name: google-chrome
-        state: absent
-
-    - name: Install NordPass
+    - name: Uninstall NordPass
       community.general.homebrew_cask:
         name: nordpass
         state: absent

@@ -1,11 +1,6 @@
 - name: apps
   tags: apps
   block:
-    - name: Uninstall NordPass
-      community.general.homebrew_cask:
-        name: nordpass
-        state: absent
-
     - name: Uninstall Raycast
       community.general.homebrew_cask:
         name: raycast

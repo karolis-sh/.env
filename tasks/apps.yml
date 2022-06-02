@@ -1,10 +1,6 @@
 - name: apps
   tags: apps
   block:
-    - name: Install NordPass
-      community.general.homebrew_cask:
-        name: nordpass
-
     - name: Install Raycast
       community.general.homebrew_cask:
         name: raycast

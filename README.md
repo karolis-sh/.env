@@ -1,4 +1,4 @@
-# `.env`
+# `env`
 
 1. `xcode-select --install`
 2. `git clone --recurse-submodules https://github.com/karolis-sh/env.git && cd env && ./init.sh`

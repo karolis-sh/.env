@@ -1,4 +1,6 @@
-#!/usr/bin/env bash
+#!/bin/bash
+
+set -e
 
 sh ./_ansible.sh setup.yml "$@"
 

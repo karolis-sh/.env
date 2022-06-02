@@ -1,4 +1,6 @@
-#!/usr/bin/env bash
+#!/bin/bash
+
+set -e
 
 if [ $(find ~ -maxdepth 1 -iname ".zshrc" -type f) ]; then
   mv -v ~/.zshrc ~/.zshrc_back

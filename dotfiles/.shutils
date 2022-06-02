@@ -2,6 +2,6 @@ exe() {
   chmod u+x $1
 }
 
-initec() {
+ecfy() {
   cp ~/.editorconfig .editorconfig
 }

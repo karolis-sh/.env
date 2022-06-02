@@ -2,10 +2,10 @@
   tags: terminal
   block:
     - name: Install tldr npm package
-      shell: yarn global add tldr && tldr curl
+      shell: npm i -g tldr && tldr curl
 
     - name: Install commitizen npm package
-      shell: yarn global add commitizen
+      shell: npm i -g commitizen
 
     - name: Install tree
       community.general.homebrew:

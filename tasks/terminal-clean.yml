@@ -2,10 +2,10 @@
   tags: terminal
   block:
     - name: Uninstall tldr npm package
-      shell: yarn global remove tldr
+      shell: npm rm -g tldr
 
     - name: Uninstall commitizen npm package
-      shell: yarn global remove commitizen
+      shell: npm rm -g commitizen
 
     - name: Uninstall tree
       community.general.homebrew:

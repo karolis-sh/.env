@@ -1,7 +1,7 @@
 - name: node
   tags: node
   block:
-    - name: Uninstall Volta
-      ansible.builtin.file:
-        path: ~/.volta
+    - name: Uninstall pnpm
+      community.general.homebrew:
+        name: pnpm
         state: absent

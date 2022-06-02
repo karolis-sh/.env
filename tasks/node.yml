@@ -3,4 +3,4 @@
   block:
     - name: Install pnpm
       community.general.homebrew:
-        name: pnpm 
+        name: pnpm

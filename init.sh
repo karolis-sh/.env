@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
 
-which brew || /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+install_brew () {
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/karolis.sh/.zprofile
+  eval "$(/opt/homebrew/bin/brew shellenv)" 
+}
+
+which brew || install_brew
 brew update
 brew install ansible

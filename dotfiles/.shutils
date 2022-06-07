@@ -1,7 +1,14 @@
+# Fix duplicate VSCode icons https://github.com/microsoft/vscode/issues/60579#issuecomment-840243928
+alias code='open -b com.microsoft.VSCode'
+
 exe() {
   chmod u+x $1
 }
 
 ecfy() {
   cp ~/.editorconfig .editorconfig
+}
+
+openurl() {
+  osascript ~/open-chrome.applescript "$1"
 }

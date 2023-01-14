@@ -7,5 +7,4 @@
     - import_tasks: tasks/font-clean.yml
     - import_tasks: tasks/terminal-clean.yml
     - import_tasks: tasks/dotfiles-clean.yml
-    - import_tasks: tasks/node-clean.yml
     - import_tasks: tasks/zsh-clean.yml

@@ -25,7 +25,7 @@ ZSH_THEME="robbyrussell"
 
 # Uncomment one of the following lines to change the auto-update behavior
 # zstyle ':omz:update' mode disabled  # disable automatic updates
-# zstyle ':omz:update' mode auto      # update automatically without asking
+zstyle ':omz:update' mode auto      # update automatically without asking
 # zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 
 # Uncomment the following line to change how often to auto-update (in days).
@@ -71,12 +71,12 @@ ZSH_THEME="robbyrussell"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-    git
-    macos
-    npm
-    yarn
-    docker
-    zsh-autosuggestions
+  git
+  macos
+  npm
+  yarn
+  docker
+  zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -107,6 +107,16 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Fix duplicate VSCode icons https://github.com/microsoft/vscode/issues/60579#issuecomment-840243928
+alias code='open -b com.microsoft.VSCode'
+
+exe() {
+  chmod u+x $1
+}
+
+openurl() {
+  osascript ~/open-chrome.applescript "$1"
+}
+
 source ~/.profile
 source ~/.zprofile
-source ~/.shutils

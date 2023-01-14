@@ -1,7 +1,0 @@
-- name: node
-  tags: node
-  block:
-    - name: Uninstall pnpm
-      community.general.homebrew:
-        name: pnpm
-        state: absent

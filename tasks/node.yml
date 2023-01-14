@@ -1,6 +1,0 @@
-- name: node
-  tags: node
-  block:
-    - name: Install pnpm
-      community.general.homebrew:
-        name: pnpm
